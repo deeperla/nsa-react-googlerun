@@ -1,6 +1,13 @@
 {
     "configurations": [
         {
+            "name": "Launch Chrome",
+            "request": "launch",
+            "type": "pwa-chrome",
+            "url": "http://localhost:3000",
+            "webRoot": "${workspaceFolder}"
+        },
+        {
             "name": "Cloud Run: Run/Debug Locally",
             "type": "cloudcode.cloudrun",
             "request": "launch",
@@ -23,6 +30,18 @@
                 "minikube": {}
             },
             "watch": true
-        }
+        },
+        {
+            "version": "0.2.0",
+            "configurations": [
+              {
+                "type": "pwa-msedge",
+                "request": "launch",
+                "name": "Launch Edge against localhost",
+                "url": "http://localhost:3000",
+                "webRoot": "${workspaceFolder}"
+              }
+            ]
+          }
     ]
 }

@@ -1,3 +1,16 @@
+#root {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  background-color: #ffffff;
+}
+
+.treecanvas {
+  width: 100%;
+  height: 100% !important;
+  overflow: hidden;
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -15,3 +28,38 @@ code {
 .pb-5, .py-5 {
   padding-bottom: 0rem!important;
 }
+.navbar-dark .navbar-brand {
+  color: rgb(0, 0, 0);
+}
+
+.navbar-dark .navbar-nav .active>.nav-link, .navbar-dark .navbar-nav .nav-link.active, .navbar-dark .navbar-nav .nav-link.show, .navbar-dark .navbar-nav .show>.nav-link {
+  color: rgb(0, 0, 0);
+}
+
+.navbar-dark .navbar-nav .nav-link {
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.bg-dark {
+  background-color: rgba(172, 66, 66, 0) !important;
+}
+
+.searchbox {
+  position: absolute;
+  z-index: 1000;
+  top: 150px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.searchboxtext {
+  text-align: center;
+  margin-top: 7px;
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */
+   -khtml-user-select: none; /* Konqueror HTML */
+     -moz-user-select: none; /* Old versions of Firefox */
+      -ms-user-select: none; /* Internet Explorer/Edge */
+          user-select: none; /* Non-prefixed version, currently
+                                supported by Chrome, Edge, Opera and Firefox */
+}
+
